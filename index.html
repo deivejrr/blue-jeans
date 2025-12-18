@@ -50,3 +50,99 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Jeans | Alfaiataria de Luxo em BH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #c5a059; --dark: #1a1a1a; }
+        body { font-family: 'Poppins', sans-serif; background-color: #ffffff; color: var(--dark); }
+        .navbar-brand { font-family: 'Playfair Display', serif; font-size: 2rem; letter-spacing: 2px; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1350&q=80'); 
+                height: 60vh; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .btn-gold { background-color: var(--gold); color: white; border-radius: 0; padding: 12px 30px; border: none; transition: 0.3s; }
+        .btn-gold:hover { background-color: #a38446; color: white; }
+        .product-card { border: none; transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-img { height: 350px; object-fit: cover; background-color: #f4f4f4; }
+        /* Botão WhatsApp */
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; 
+                          display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 1000; text-decoration: none; font-size: 30px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-white py-3 shadow-sm">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">BLUE JEANS</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold font-serif">Alfaiataria Premium</h1>
+            <p class="lead mb-4">O ajuste perfeito para quem valoriza o estilo em Belo Horizonte.</p>
+            <a href="#loja" class="btn btn-gold btn-lg">EXPLORAR COLEÇÃO</a>
+        </div>
+    </header>
+
+    <main class="container my-5" id="loja">
+        <div class="text-center mb-5">
+            <h2 class="display-6">Nossos Modelos</h2>
+            <div style="width: 50px; height: 3px; background: var(--gold); margin: 10px auto;"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=500&q=80" class="card-img-top product-img" alt="Jeans Slim">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Jeans Slim Fit Dark</h5>
+                        <p class="text-muted small">Denim japonês com elastano</p>
+                        <p class="h5 mb-3">R$ 349,90</p>
+                        <a href="https://wa.me/SEU_NUMERO_AQUI" class="btn btn-outline-dark w-100">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card h-100 border-gold">
+                    <img src="https://images.unsplash.com/photo-1604176354204-926873ff34b0?auto=format&fit=crop&w=500&q=80" class="card-img-top product-img" alt="Jeans Reta">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Corte Reto Clássico</h5>
+                        <p class="text-muted small">O tradicional que nunca falha</p>
+                        <p class="h5 mb-3">R$ 299,00</p>
+                        <a href="https://wa.me/SEU_NUMERO_AQUI" class="btn btn-outline-dark w-100">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=500&q=80" class="card-img-top product-img" alt="Jeans Skinny">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Super Skinny Black</h5>
+                        <p class="text-muted small">Máximo conforto e estilo</p>
+                        <p class="h5 mb-3">R$ 319,00</p>
+                        <a href="https://wa.me/SEU_NUMERO_AQUI" class="btn btn-outline-dark w-100">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-5 text-center">
+        <p class="mb-0">© 2025 BLUE JEANS - ALFAIATARIA BH</p>
+        <small class="text-muted">Rua da Moda, Belo Horizonte - MG</small>
+    </footer>
+
+    <a href="https://wa.me/SEU_NUMERO_AQUI" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35">
+    </a>
+
+</body>
+</html>
